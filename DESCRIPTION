@@ -5,7 +5,7 @@ Version: 0.1.0
 Author: Eric V. Strobl
 Maintainer: Eric V. Strobl
 Description: SIEVE prioritizes drugs for complex disorders by first decomposing broad clinical phenotypes into locus-anchored subphenotypes, then using genotype-coupled reference expression to infer a genetically calibrated mechanism vector for each subphenotype. It projects both mechanism vectors and perturbational signatures away from negative-control expression programs and aggregates concordance across experimental contexts to produce robust, locus-specific drug rankings.
-Depends: MASS
+Depends: bigstatsr, data.table, fgsea
 License: CC BY-NC 4.0
 Encoding: UTF-8
 LazyData: true
