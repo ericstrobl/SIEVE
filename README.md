@@ -25,12 +25,18 @@ SIEVE prioritizes drugs for complex disorders by first decomposing broad clinica
 
 # Sample Run
 
-First download simulation_inputs_small.rds from the Data folder. Then:
+First download simulation_inputs_small.rds from the Data folder. Then load the compact semi-synthetic 1000 Genomes input bundle:
 
-> dat <- readRDS("simulation_inputs_small.rds") # Load the compact semi-synthetic 1000 Genomes input bundle
+> dat <- readRDS("simulation_inputs_small.rds")
 
-> data = simulate_sieve_inputs(dat$SNPs, dat$chr_pos, dat$block_id) # Generate one synthetic dataset
+Generate one synthetic dataset:
 
-> SIEVE_mod = SIEVE(data$Zstat, data$chr_pos, SNPs, data$iSNPs_ref, data$jSNPs, data$G, as_FBM(data$CMAP_diff), data$iCMAP, data$cond_meta, anchor_neg_cmap_names = data$anchor_neg_pert_ids) # run SIEVE
+> data = simulate_sieve_inputs(dat$SNPs, dat$chr_pos, dat$block_id)
 
-> print(SIEVE_mod_new$drug_ranks_dt[1:20,2:4]) # Show the top-ranked perturbagens across loci
+Run SIEVE:
+
+> SIEVE_mod = SIEVE(data$Zstat, data$chr_pos, SNPs, data$iSNPs_ref, data$jSNPs, data$G, as_FBM(data$CMAP_diff), data$iCMAP, data$cond_meta, anchor_neg_cmap_names = data$anchor_neg_pert_ids)
+
+Display the top-ranked perturbagens across loci
+
+> print(SIEVE_mod_new$drug_ranks_dt[1:20,2:4])
