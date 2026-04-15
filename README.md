@@ -29,7 +29,7 @@ First download simulation_inputs_small.rds from the Data folder. Then load the c
 
 > dat <- readRDS("simulation_inputs_small.rds")
 
-Generate one synthetic dataset:
+Generate one synthetic dataset. This step can take around 2 hours:
 
 > data = simulate_data(dat$SNPs, dat$chr_pos, dat$block_id)
 
