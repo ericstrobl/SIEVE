@@ -31,11 +31,11 @@ First download simulation_inputs_small.rds from the Data folder. Then load the c
 
 Generate one synthetic dataset:
 
-> data = simulate_sieve_inputs(dat$SNPs, dat$chr_pos, dat$block_id)
+> data = simulate_data(dat$SNPs, dat$chr_pos, dat$block_id)
 
 Run SIEVE:
 
-> SIEVE_mod = SIEVE(data$Zstat, data$chr_pos, SNPs, data$iSNPs_ref, data$jSNPs, data$G, as_FBM(data$CMAP_diff), data$iCMAP, data$cond_meta, anchor_neg_cmap_names = data$anchor_neg_pert_ids)
+> SIEVE_mod = SIEVE(data$Zstat, data$chr_pos, dat$SNPs, data$iSNPs_ref, data$jSNPs, data$G, as_FBM(data$CMAP_diff), data$iCMAP, data$cond_meta, anchor_neg_cmap_names = data$anchor_neg_pert_ids)
 
 Display the top-ranked perturbagens across loci
 
