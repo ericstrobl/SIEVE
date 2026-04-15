@@ -37,6 +37,6 @@ Run SIEVE:
 
 > SIEVE_mod = SIEVE(data$Zstat, data$chr_pos, dat$SNPs, data$iSNPs_ref, data$jSNPs, data$G, as_FBM(data$CMAP_diff), data$iCMAP, data$cond_meta, anchor_neg_cmap_names = data$anchor_neg_pert_ids)
 
-Display the top-ranked perturbagens across loci
+Display the top-ranked perturbagens for each locus. The highest-ranked hits within a locus should often include many `TRUE_Lk_*` perturbagens sharing the same `k`, indicating enrichment of a common true therapeutic class within that locus:
 
 > print(SIEVE_mod_new$drug_ranks_dt[1:20,2:4])
