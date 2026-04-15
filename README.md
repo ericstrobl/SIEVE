@@ -39,4 +39,4 @@ Run SIEVE:
 
 Display the top-ranked perturbagens for each locus. The highest-ranked hits within a locus should often include many `TRUE_Lk_*` perturbagens sharing the same `k`, indicating enrichment of a common true therapeutic class within that locus:
 
-> print(SIEVE_mod_new$drug_ranks_dt[1:20,2:4])
+> print(SIEVE_mod$drug_ranks_dt[1:20,2:4])
