@@ -1,6 +1,6 @@
 # SIEVE: Locus-Anchored Drug Prioritization for Complex Disorders
 
-SIEVE prioritizes drugs for complex disorders by first decomposing broad clinical phenotypes into locus-anchored subphenotypes, then using genotype-coupled reference expression to infer a genetically calibrated mechanism vector for each subphenotype. It projects both mechanism vectors and perturbational signatures away from negative-control expression programs and aggregates concordance across experimental contexts to produce robust, locus-specific drug rankings.
+[SIEVE](https://www.medrxiv.org/content/10.64898/2026.04.15.26350958v1) prioritizes drugs for complex disorders by first decomposing broad clinical phenotypes into locus-anchored subphenotypes, then using genotype-coupled reference expression to infer a genetically calibrated mechanism vector for each subphenotype. It projects both mechanism vectors and perturbational signatures away from negative-control expression programs and aggregates concordance across experimental contexts to produce robust, locus-specific drug rankings.
 
 # Installation
 
